@@ -1,0 +1,28 @@
+<app-header name="Reservas"> </app-header>
+<ion-content>
+  <ion-list mode="ios" lines="none">
+    <ion-item>
+      <ion-label class="ion-text-center">
+        <h1 class="text-primary weight--900">MIS RESERVAS</h1>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-list mode="ios" class="" *ngIf="bookingList.length > 1">
+    <ng-container *ngFor="let booking of bookingList">
+      <app-slider-item
+        [nameArea]="booking.nameArea"
+        [dateAction]="booking.dateAction"
+        [time]="booking.time"
+        [status]="booking.status"
+      >
+      </app-slider-item>
+    </ng-container>
+  </ion-list>
+
+<ion-list *ngIf="!bookingList && bookingList.length === 0" >
+  no hay reeservas
+</ion-list>
+
+</ion-content>
+<app-footer> </app-footer>

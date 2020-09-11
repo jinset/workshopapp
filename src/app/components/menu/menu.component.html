@@ -1,0 +1,77 @@
+<ion-content>
+  <!-- <ion-list mode="ios" lines="none">
+    <ion-item class="ion-item-bg">
+      <ion-icon name="arrow-back-outline" (click)="closeModal()"></ion-icon>
+      <ion-label>
+        Menu
+      </ion-label>
+    </ion-item>
+  </ion-list> -->
+
+  <ion-toolbar class="gradient-top-right ">
+    <ion-buttons slot="start">
+      <ion-button (click)="closeModal()">
+        <ion-icon src="/assets/left-arrow.svg"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title class="text-secundary">MENU</ion-title>
+  </ion-toolbar>
+
+  <ion-list mode="ios" lines="none">
+    <ion-item>
+      <ion-label>
+        <h1 class="text-primary weight--900">PERSONAL</h1>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-list
+    routerLink="profile"
+    (click)="closeModal()"
+    mode="ios"
+    lines="none"
+    class="ion-ist-style border-all border-style margin-10 "
+  >
+    <ion-item class="ion-item-style padding-vertical-10">
+      <ion-label *ngIf="user">
+        {{user.name}} {{user.lastName}}
+      </ion-label>
+      <ion-label *ngIf="!user">
+        <ion-skeleton-text animated></ion-skeleton-text>
+      </ion-label>
+      <ion-label>
+        20202020
+      </ion-label>
+      <ion-icon src="/assets/arrow-circle.svg"></ion-icon>
+    </ion-item>
+  </ion-list>
+
+  <ion-list mode="ios" lines="none">
+    <ion-item>
+      <ion-label>
+        <h1 class="text-primary weight--900">GENERAL</h1>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ng-container *ngFor="let item of listOptionGeneral">
+    <ion-list
+      mode="ios"
+      lines="none"
+      class="ion-ist-style border-all border-style margin-10 "
+    >
+      <ion-item class="ion-item-style padding-vertical-10">
+        <ion-label>
+          {{ item.name }}
+        </ion-label>
+        <ion-icon src="/assets/arrow-circle.svg"></ion-icon>
+      </ion-item>
+    </ion-list>
+  </ng-container>
+
+  <div class="ion-text-center">
+    <ion-button fill="outline" (click)="logout()" class="border-btn"
+      >SALIR DEL SISTEMA</ion-button
+    >
+  </div>
+</ion-content>

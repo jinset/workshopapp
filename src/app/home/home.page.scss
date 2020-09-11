@@ -1,0 +1,32 @@
+.option-container {
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: white;
+  padding: 20px 0px;
+  margin: 0px 20px;
+  
+  -webkit-box-shadow: 0px 12px 103px -54px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 12px 103px -54px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 12px 103px -54px rgba(0, 0, 0, 0.75);
+}
+
+.border-item {
+  border: 1px solid #abaaac3b !important;
+  -webkit-box-shadow: 0px 12px 103px -54px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 12px 103px -54px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 12px 103px -54px rgba(0, 0, 0, 0.75);
+}
+
+.padding {
+  padding: 0 10px 20px 10px;
+}
+
+.margin {
+  margin-bottom: 10px;
+}
+.margin-right {
+  margin-right: 5px;
+}

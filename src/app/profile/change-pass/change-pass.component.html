@@ -1,0 +1,108 @@
+<app-header name="Cambiar Contraseña"> </app-header>
+
+<ion-content>
+  <ion-list mode="ios" lines="none">
+    <ion-item>
+      <ion-label>
+        <h1 class="text-primary weight--900">ACTUAL</h1>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-list
+    mode="ios"
+    lines="none"
+    class="ion-ist-style border-all border-style margin-10 "
+  >
+    <ion-item class="ion-item-style padding-vertical-10">
+      <ion-label>
+        <ion-input
+          id="actuaPass"
+          #actuaPass
+          [(ngModel)]="actualPass"
+          type="password"
+          placeholder="Confirmar contraseña"
+        ></ion-input>
+      </ion-label>
+      <ion-icon
+        src="/assets/hide.svg"
+        slot="end"
+        (click)="togglePasswordMode(actuaPass)"
+      ></ion-icon>
+    </ion-item>
+  </ion-list>
+
+  <ion-list mode="ios" lines="none">
+    <ion-item>
+      <ion-label>
+        <h1 class="text-primary weight--900">NUEVA</h1>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <form [formGroup]="changeForm">
+    <ion-list
+      mode="ios"
+      lines="none"
+      class="ion-ist-style border-all border-style margin-10 "
+    >
+      <ion-item class="ion-item-style padding-vertical-10">
+        <ion-label>
+          <ion-input
+            id="newPassword"
+            #newPassword
+            formControlName="newPassword"
+            type="password"
+            placeholder="Digite la contraseña"
+          ></ion-input>
+        </ion-label>
+        <ion-icon
+          src="/assets/hide.svg"
+          slot="end"
+          (click)="togglePasswordMode(newPassword)"
+        ></ion-icon>
+      </ion-item>
+    </ion-list>
+
+    <ion-list
+      mode="ios"
+      lines="none"
+      class="ion-ist-style border-all border-style margin-10 "
+    >
+      <ion-item class="ion-item-style padding-vertical-10">
+        <ion-label>
+          <ion-input
+            id="confirmPassword"
+            #confirmPassword
+            formControlName="confirmPassword"
+            type="password"
+            placeholder="Confirmar contraseña"
+          ></ion-input>
+        </ion-label>
+        <ion-icon
+          src="/assets/hide.svg"
+          slot="end"
+          (click)="togglePasswordMode(confirmPassword)"
+        ></ion-icon>
+      </ion-item>
+    </ion-list>
+
+    <div class="alert-msg-form">
+      <span *ngIf="changeForm.hasError('notSame')"
+        >las contraseñas deben ser iguales
+      </span>
+    </div>
+
+    <div class="ion-text-center">
+      <ion-button
+        fill="outline"
+        form="changeForm"
+        (click)="onSubmit()"
+        class="border-btn"
+        [disabled]="!changeForm.valid"
+        >CAMBIAR</ion-button
+      >
+    </div>
+  </form>
+</ion-content>
+<app-footer> </app-footer>

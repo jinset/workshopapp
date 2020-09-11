@@ -1,0 +1,53 @@
+<!-- <ion-toolbar class="ion-toolbar-bg">
+
+  </ion-toolbar> -->
+
+  <div class="title-content gradient-top ">
+      <ion-buttons class="btn-margin" slot="start">
+          <ion-button (click)="goBack()">
+            <ion-icon
+            src="/assets/left-arrow.svg"
+            ></ion-icon>
+          </ion-button>
+        </ion-buttons>
+    <div class="content-center ">
+      <h2 class="text-secundary font--24 weight--900">
+        RECUPERAR
+      </h2>
+    </div>
+  </div>
+
+<ion-content class="ion-padding">
+
+  <div class="container-center">
+    <form [formGroup]="recoverForm">
+      <ion-item class="ion-no-padding ion-item-border" lines="none">
+        <ion-input
+          formControlName="email"
+          type="text"
+          placeholder="USUARIO"
+        ></ion-input>
+      </ion-item>
+      <div class="alert-msg-form">
+        <span
+          *ngIf="
+            !recoverForm.get('email').valid && recoverForm.get('email').touched
+          "
+          >Porfavor ingresar un email valido
+        </span>
+      </div>
+      <div class="ion-padding">
+        <ion-button
+          fill="outline"
+          form="recoverForm"
+          (click)="onSubmit()"
+          [disabled]="!recoverForm.valid"
+          class="border-btn"
+          >RECUPERAR</ion-button
+        >
+      </div>
+    </form>
+  </div>
+</ion-content>
+<ion-tab-bar slot="bottom" class="gray-div" style="border: none;">
+</ion-tab-bar>

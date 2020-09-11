@@ -1,0 +1,64 @@
+<app-header name="Reservas" itSave="true" (btnSave)="btnSave($event)">
+</app-header>
+<ion-content>
+    <ion-list mode="ios" lines="none">
+        <ion-item>
+          <ion-label class="ion-text-center">
+            <h1 class="text-primary weight--900">AMENIDAD</h1>
+          </ion-label>
+        </ion-item>
+      </ion-list>
+
+  <ion-item mode="md" class="white-bg">
+    <ion-select
+      [interfaceOptions]="customActionSheetOptions"
+      interface="action-sheet"
+      value="piscina"
+      (ionChange)="onChange($event)"
+    >
+      <ion-select-option value="piscina">Piscina</ion-select-option>
+      <ion-select-option value="cine">Cine</ion-select-option>
+      <ion-select-option value="area_comun">Area comun</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-list mode="ios" lines="none">
+      <ion-item>
+        <ion-label class="ion-text-center">
+          <h1 class="text-primary weight--900">CALENDARIO</h1>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+
+
+  <div class="white-bg">
+    <ejs-calendar
+      locale="es"
+      id="calendar"
+      [value]="value"
+      [min]="minDate"
+      (change)="valueChange($event)"
+    >
+    </ejs-calendar>
+  </div>
+
+  <ion-list mode="ios" lines="none">
+      <ion-item>
+        <ion-label class="ion-text-center">
+          <h1 class="text-primary weight--900">HORARIO</h1>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+
+  <ion-list class="white-bg">
+      <ion-radio-group  (ionSelect)="radioSelect($event)">
+        <ion-item *ngFor="let schedule of scheduleList">
+          <ion-label>{{schedule.time}}</ion-label>
+          <ion-radio slot="end" value="{{schedule.time}}" disabled="{{!schedule.available}}"></ion-radio>
+        </ion-item>
+  
+      </ion-radio-group>
+    </ion-list>
+
+</ion-content>
+<app-footer disabledAdd="true"> </app-footer>

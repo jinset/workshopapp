@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="375" height="221.134" viewBox="0 0 375 221.134">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.632" y1="0.7" x2="0.105" y2="-0.104" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffdd82"/>
+      <stop offset="0.051" stop-color="#e1ce77" stop-opacity="0.886"/>
+      <stop offset="0.154" stop-color="#adb364" stop-opacity="0.678"/>
+      <stop offset="0.261" stop-color="#7f9b53" stop-opacity="0.498"/>
+      <stop offset="0.37" stop-color="#588745" stop-opacity="0.345"/>
+      <stop offset="0.482" stop-color="#387739" stop-opacity="0.22"/>
+      <stop offset="0.597" stop-color="#206a30" stop-opacity="0.122"/>
+      <stop offset="0.718" stop-color="#0e622a" stop-opacity="0.055"/>
+      <stop offset="0.847" stop-color="#045c26" stop-opacity="0.012"/>
+      <stop offset="1" stop-color="#015b25" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.632" y1="0.7" x2="0.105" y2="-0.104" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#618739"/>
+      <stop offset="0.029" stop-color="#5a8437" stop-opacity="0.937"/>
+      <stop offset="0.17" stop-color="#3f7732" stop-opacity="0.651"/>
+      <stop offset="0.318" stop-color="#286d2d" stop-opacity="0.416"/>
+      <stop offset="0.47" stop-color="#176529" stop-opacity="0.231"/>
+      <stop offset="0.629" stop-color="#0a5f27" stop-opacity="0.102"/>
+      <stop offset="0.799" stop-color="#035c25" stop-opacity="0.024"/>
+      <stop offset="1" stop-color="#015b25" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_86" data-name="Group 86" transform="translate(0 1)">
+    <path id="Path_13" data-name="Path 13" d="M-369.081,335.95s140.416,4.8,374.495-203.325V116.25l-374.495-1.425S-370.217,335.95-369.081,335.95Z" transform="translate(369.586 -115.825)" fill="#015b25"/>
+    <path id="Path_19" data-name="Path 19" d="M-749.4,1464.175s106.6-15.6,179.4-97.5H-749.4S-750.618,1464.175-749.4,1464.175Z" transform="translate(749.942 -1367.675)" opacity="0.19" fill="url(#linear-gradient)"/>
+    <path id="Path_20" data-name="Path 20" d="M-719.7,1010.675s128.7-23.4,256.1-143H-719.7S-720.873,1010.675-719.7,1010.675Z" transform="translate(720.222 -868.675)" opacity="0.54" fill="url(#linear-gradient-2)"/>
+  </g>
+</svg>

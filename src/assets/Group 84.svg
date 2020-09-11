@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="375.375" height="252.25" viewBox="0 0 375.375 252.25">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.437" y1="0.294" x2="0.705" y2="1.154" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#618739"/>
+      <stop offset="0.029" stop-color="#5a8437" stop-opacity="0.937"/>
+      <stop offset="0.17" stop-color="#3f7732" stop-opacity="0.651"/>
+      <stop offset="0.318" stop-color="#286d2d" stop-opacity="0.416"/>
+      <stop offset="0.47" stop-color="#176529" stop-opacity="0.231"/>
+      <stop offset="0.629" stop-color="#0a5f27" stop-opacity="0.102"/>
+      <stop offset="0.799" stop-color="#035c25" stop-opacity="0.024"/>
+      <stop offset="1" stop-color="#015b25" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.437" y1="0.294" x2="0.705" y2="1.154" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffdd82"/>
+      <stop offset="0.051" stop-color="#e1ce77" stop-opacity="0.886"/>
+      <stop offset="0.154" stop-color="#adb364" stop-opacity="0.678"/>
+      <stop offset="0.261" stop-color="#7f9b53" stop-opacity="0.498"/>
+      <stop offset="0.37" stop-color="#588745" stop-opacity="0.345"/>
+      <stop offset="0.482" stop-color="#387739" stop-opacity="0.22"/>
+      <stop offset="0.597" stop-color="#206a30" stop-opacity="0.122"/>
+      <stop offset="0.718" stop-color="#0e622a" stop-opacity="0.055"/>
+      <stop offset="0.847" stop-color="#045c26" stop-opacity="0.012"/>
+      <stop offset="1" stop-color="#015b25" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_84" data-name="Group 84" transform="translate(0 -416)">
+    <path id="Path_15" data-name="Path 15" d="M-29.5,1016.75S39.125,1030.25,239.375,893c0,0,102.375-70.875,105.75-83.25V1062H-29.5S-31.188,1015.063-29.5,1016.75Z" transform="translate(30.25 -393.75)" fill="url(#linear-gradient)"/>
+    <path id="Path_16" data-name="Path 16" d="M-32.875,1359.875s68.625,13.5,268.875-123.75c0,0,102.375-70.875,105.75-83.25v209.25H-32.875S-34.563,1358.188-32.875,1359.875Z" transform="translate(33.625 -693.875)" opacity="0.59" fill="url(#linear-gradient-2)"/>
+  </g>
+</svg>

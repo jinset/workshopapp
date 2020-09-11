@@ -1,0 +1,13 @@
+<ion-tabs >
+  <ion-tab-bar slot="bottom" class="border-radius ">
+    <ion-tab-button tab="schedule" [disabled]="disabledHome" (click)="goHome()"  >
+        <ion-icon src="/assets/logo-home.svg" class="font--40"></ion-icon>
+      </ion-tab-button>
+    <ion-tab-button tab="schedule" [disabled]="disabledAdd" (click)="presentActionSheet()">
+        <ion-icon src="/assets/logo-add.svg" class="font--40"></ion-icon>
+      </ion-tab-button>
+    <ion-tab-button tab="schedule" (click)="presentModal()" >
+      <ion-icon src="/assets/logo-menu.svg" class="font--40"></ion-icon>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>

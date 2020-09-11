@@ -1,0 +1,302 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import "~@ionic/angular/css/display.css";
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+// Global scss styles
+
+$green-light: #6b9253;
+$green-medium: #478047;
+$green-dark: #347c51;
+
+$gray-1: #f5f5f5;
+$gray-2: #abaaac;
+
+$white: #ffffff;
+$black: #000000;
+
+$green-texture: #0b5f27;
+$gold: #fcdb81;
+
+$margin-footer: 58px;
+
+//Gradients background
+
+.gradient-top-right {
+  --background: url(/assets/header-bg.svg);
+  background: url(/assets/header-bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.gradient-top {
+  --background: url(/assets/header-login.svg);
+  background: url(/assets/header-login.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 220px;
+}
+// Fonts
+$fonts: (
+  10: 10px,
+  12: 12px,
+  14: 14px,
+  16: 16px,
+  18: 18px,
+  20: 20px,
+  22: 22px,
+  24: 24px,
+  26: 26px,
+  28: 28px,
+  40: 40px,
+  50: 50px,
+  80: 80px
+);
+
+@each $fontsize, $font in $fonts {
+  .font--#{$fontsize} {
+    font-size: $font;
+  }
+}
+
+.text-primary {
+  color: $green-texture;
+}
+
+.text-secundary {
+  color: #ffffff;
+}
+
+ion-select::part(text),
+ion-select::part(icon) {
+  color: #ffffff;
+  font-weight: 900;
+}
+
+$weights: (
+  100: 100,
+  200: 200,
+  300: 300,
+  400: 400,
+  500: 500,
+  600: 600,
+  700: 700,
+  800: 800,
+  900: 900
+);
+
+@each $fontweight, $weight in $weights {
+  .weight--#{$fontweight} {
+    font-weight: $weight;
+  }
+}
+//Border
+
+.border-radius-top {
+  border-radius: 0% 100% 100% 0% / 55% 0% 100% 45%;
+}
+
+.border-all {
+  border-radius: 15px;
+}
+
+.border-top {
+  border-radius: 30px 30px 0px 0px;
+}
+
+.content-right {
+  right: 10px;
+  position: absolute;
+}
+
+.action-sheet-footer .action-sheet-group {
+  margin-bottom: $margin-footer;
+}
+
+.action-sheet-footer .action-sheet-container {
+  padding: 0px;
+}
+
+.action-sheet-footer .action-sheet-group {
+  border-radius: 0px;
+}
+
+.action-sheet-footer .action-sheet-button {
+  color: $gray-2;
+}
+
+.action-sheet-footer ion-backdrop {
+  bottom: $margin-footer;
+}
+.action-sheet-footer ion-icon {
+  right: 0px;
+  position: absolute;
+}
+
+.sc-ion-modal-ios-h,
+.sc-ion-modal-md-h {
+  bottom: $margin-footer;
+}
+
+.action-sheet-icon {
+  margin-inline-end: 0px !important;
+  -webkit-margin-end: 0px !important;
+}
+
+.container-center {
+  text-align: center;
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.bottom-content {
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  right: 0;
+}
+
+.content-center {
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 35%;
+  transform: translateY(-50%);
+}
+
+.ion-toolbar-bg {
+  --background: transparent !important;
+}
+
+//
+
+ion-content {
+  --ion-background-color: #f5f5f5;
+}
+
+.ion-list-style {
+  background-color: #ffffff;
+  --ion-background-color: #ffffff;
+  --background-color: #ffffff;
+}
+
+.white-bg {
+  background-color: $white;
+  --background: $white;
+}
+
+.color-gray {
+  --color: #abaaac !important;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.imgStyle {
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+}
+
+.alert-msg-form {
+  display: flex;
+  padding: 10px 0px;
+  span {
+    color: red;
+  }
+}
+
+.btn-margin {
+  margin: 5px;
+}
+
+.border-btn {
+  --color: #ffffff;
+  --background: #347c51;
+  --border-radius: 50px;
+  --border-color: #a2a2a240 !important;
+  --box-shadow: 0px 12px 103px -54px rgba(0, 0, 0, 0.75);
+
+  width: 75%;
+  height: 48px;
+  font-weight: 900;
+}
+// Calendar
+
+.e-calendar,
+.e-bigger.e-small .e-calendar {
+  max-width: none !important;
+}
+
+.e-footer-container {
+  display: none !important;
+}
+
+.border-style {
+  border: 1px solid #abaaac3b !important;
+  -webkit-box-shadow: 0px 3px 28px -16px #969396;
+  -moz-box-shadow: 0px 3px 28px -16px #969396;
+  box-shadow: 0px 3px 28px -16px #969396;
+  --box-shadow: 0px 3px 28px -16px #969396;
+}
+
+// PADDING
+.padding-vertical {
+  &-5 {
+    padding: 5px 0;
+  }
+  &-10 {
+    padding: 10px 0;
+  }
+}
+
+// MARGIN
+.margin-horizontal {
+  &-10 {
+    margin: 0 10px;
+  }
+}
+
+.margin-vertical {
+  &-10 {
+    margin: 10px 0;
+  }
+}
+
+.margin {
+  &-10 {
+    margin: 10px;
+  }
+}
+
+
+

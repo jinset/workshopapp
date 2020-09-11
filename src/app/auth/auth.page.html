@@ -1,0 +1,60 @@
+<div class="title-content gradient-top">
+  <div class="content-center ">
+    <h2 class="text-secundary font--24 weight--900">
+      INICIAR
+    </h2>
+    <span class="text-secundary font--14 weight--500">
+      SESIÓN
+    </span>
+  </div>
+</div>
+
+<ion-content class="ion-padding">
+  <div>
+    <form [formGroup]="signinForm">
+      <ion-item class="ion-no-padding ion-item-border" lines="none">
+        <ion-input formControlName="email" placeholder="USUARIO" type="text">
+        </ion-input>
+      </ion-item>
+      <div class="alert-msg-form">
+        <span
+          *ngIf="!signinForm.get('email').valid && signinForm.get('email').touched"
+          >Por favor ingrese un correo electrónico válido
+        </span>
+      </div>
+      <ion-item class="ion-no-padding ion-item-border" lines="none">
+        <ion-input
+          type="password"
+          formControlName="password"
+          placeholder="CONTRASEÑA"
+        ></ion-input>
+      </ion-item>
+      <div class="alert-msg-form">
+        <span
+          *ngIf="!signinForm.get('password').valid && signinForm.get('password').touched"
+          >Por favor ingrese una contraseña valida
+        </span>
+      </div>
+
+      <div class="ion-text-center text-primary">
+        <span routerLink="recovery" (click)="on()" class="font--12">Recuperar contraseña</span>
+      </div>
+  
+      <div class="ion-padding ion-text-center">
+        <ion-button
+          fill="outline"
+          form="signinForm"
+          (click)="onSubmit()"
+          [disabled]="!signinForm.valid"
+          class="border-btn "
+          >INGRESAR</ion-button
+        >
+      </div>
+    </form>
+
+  </div>
+  
+</ion-content>
+
+  <ion-tab-bar slot="bottom" class="gray-div" style="border: none;">
+  </ion-tab-bar>

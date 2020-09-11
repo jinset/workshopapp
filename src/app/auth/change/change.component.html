@@ -1,0 +1,55 @@
+<div class="title-content gradient-top ">
+  <ion-buttons class="btn-margin" slot="start">
+    <ion-button (click)="goBack()">
+      <ion-icon src="/assets/left-arrow.svg"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+  <div class="content-center ">
+    <h2 class="text-secundary font--24 weight--900">
+      CAMBIAR
+    </h2>
+    <span class="text-secundary font--14 weight--500">
+      CONTRASEÑA
+    </span>
+  </div>
+</div>
+
+<ion-content class="ion-padding">
+  <div class="container-center">
+    <form [formGroup]="changeForm">
+      <ion-item class="ion-no-padding ion-item-border" lines="none">
+        <ion-input
+          formControlName="password"
+          type="password"
+          placeholder="NUEVA"
+        >
+        </ion-input>
+      </ion-item>
+      <div class="alert-msg-form"></div>
+      <ion-item class="ion-no-padding ion-item-border" lines="none">
+        <ion-input
+          formControlName="confirmPassword"
+          type="password"
+          placeholder="CONFIRMAR"
+        ></ion-input>
+      </ion-item>
+      <div class="alert-msg-form">
+        <span *ngIf="changeForm.hasError('notSame')"
+          >las contraseñas deben ser iguales
+        </span>
+      </div>
+      <div class="ion-padding">
+        <ion-button
+          fill="outline"
+          form="changeForm"
+          (click)="onSubmit()"
+          [disabled]="!changeForm.valid"
+          class="border-btn"
+          >CAMBIAR</ion-button
+        >
+      </div>
+    </form>
+  </div>
+</ion-content>
+<ion-tab-bar slot="bottom" class="gray-div" style="border: none;">
+</ion-tab-bar>

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="375" height="53" viewBox="0 0 375 53">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_66" data-name="Rectangle 66" width="375" height="53" fill="none"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.377" y1="0.267" x2="0.019" y2="-0.428" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#618739"/>
+      <stop offset="0.029" stop-color="#5a8437" stop-opacity="0.937"/>
+      <stop offset="0.17" stop-color="#3f7732" stop-opacity="0.651"/>
+      <stop offset="0.318" stop-color="#286d2d" stop-opacity="0.416"/>
+      <stop offset="0.47" stop-color="#176529" stop-opacity="0.231"/>
+      <stop offset="0.629" stop-color="#0a5f27" stop-opacity="0.102"/>
+      <stop offset="0.799" stop-color="#035c25" stop-opacity="0.024"/>
+      <stop offset="1" stop-color="#015b25" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.353" y1="0.241" x2="-0.006" y2="-0.454" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffdd82"/>
+      <stop offset="0.051" stop-color="#e1ce77" stop-opacity="0.886"/>
+      <stop offset="0.154" stop-color="#adb364" stop-opacity="0.678"/>
+      <stop offset="0.261" stop-color="#7f9b53" stop-opacity="0.498"/>
+      <stop offset="0.37" stop-color="#588745" stop-opacity="0.345"/>
+      <stop offset="0.482" stop-color="#387739" stop-opacity="0.22"/>
+      <stop offset="0.597" stop-color="#206a30" stop-opacity="0.122"/>
+      <stop offset="0.718" stop-color="#0e622a" stop-opacity="0.055"/>
+      <stop offset="0.847" stop-color="#045c26" stop-opacity="0.012"/>
+      <stop offset="1" stop-color="#015b25" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_14" data-name="Group 14" transform="translate(-0.75 -0.75)">
+    <rect id="Rectangle_65" data-name="Rectangle 65" width="375" height="53" transform="translate(0.75 0.75)" fill="#347c51"/>
+    <g id="Group_13" data-name="Group 13" transform="translate(0.75 0.75)">
+      <g id="Group_12" data-name="Group 12" clip-path="url(#clip-path)">
+        <path id="Path_21" data-name="Path 21" d="M1.655-62.8S110.633,8.337,387.683,8.429l45.3-53.237L141.715-227.4S.778-63.346,1.655-62.8Z" transform="translate(-0.746 30.783)" opacity="0.43" fill="url(#linear-gradient)"/>
+        <path id="Path_22" data-name="Path 22" d="M17.147-73.634S126.126-2.5,403.175-2.409l45.3-53.236L157.208-238.238S16.271-74.184,17.147-73.634Z" transform="translate(-0.684 32.281)" opacity="0.2" fill="url(#linear-gradient-2)"/>
+      </g>
+    </g>
+  </g>
+</svg>

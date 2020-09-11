@@ -1,0 +1,59 @@
+<!-- <ion-item-sliding>
+  <ion-item class="ion-item-bg">
+    <ion-icon 
+      [ngClass]="{'green':status === '1' , 'yellow':status === '0', 'red':status ===  '-1'}"
+      class="fullCircle" 
+      name="ellipse"
+    >
+    </ion-icon>
+    <ion-label>
+      <h2>{{nameArea}}</h2>
+      <h2>{{nameAuthorization}}</h2>
+      <p>{{reasonAuthorization}}</p>
+    </ion-label>
+    <ion-label class="ion-text-end">
+      <p>{{dateAction}}</p>
+      <p>{{time}}</p>
+      <p>{{identification}}</p>
+    </ion-label>
+    <ion-icon name="arrow-forward-outline"></ion-icon>
+  </ion-item>
+
+  <ion-item-options side="end">
+    <ion-item-option color="danger" (click)="unread(item)">
+        <ion-icon name="trash-outline" size="large"></ion-icon>
+    </ion-item-option>
+  </ion-item-options>
+</ion-item-sliding> -->
+
+<ion-list
+  mode="ios"
+  lines="none"
+  class="ion-ist-style border-all border-style margin-10 "
+>
+  <ion-item class="ion-item-style ">
+    <ion-label>
+      <ion-icon
+        [ngClass]="{
+          green: status === 'APROVED',
+          yellow: status === 'PENDING',
+          red: status === 'DENIED'
+        }"
+        class="fullCircle"
+        name="ellipse"
+      >
+      </ion-icon>
+    </ion-label>
+    <ion-label>
+      <h2>{{ nameArea }}</h2>
+      <h2>{{ nameAuthorization }}</h2>
+      <p>{{ reasonAuthorization }}</p>
+    </ion-label>
+    <ion-label>
+      <p>{{ dateAction }}</p>
+      <p>{{ time }}</p>
+      <p>{{ identification }}</p>
+    </ion-label>
+    <ion-icon src="/assets/arrow-circle.svg"></ion-icon>
+  </ion-item>
+</ion-list>

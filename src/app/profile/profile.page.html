@@ -1,0 +1,71 @@
+<app-header
+  name="Información usuario"
+  itSave="true"
+  (btnSave)="btnSave($event)"
+>
+</app-header>
+
+<ion-content>
+  <ion-grid class="white-bg">
+    <ion-label class="ion-text-center">
+      <h1 class="text-primary weight--900">FOTO</h1>
+    </ion-label>
+    <ion-row>
+      <ion-col class="center" size="12">
+        <ion-avatar
+          [ngStyle]="{ background: 'url(' + imagePath + ')' }"
+          class="imgStyle"
+        >
+        </ion-avatar>
+      </ion-col>
+      <ion-col>
+        <div class="ion-text-end">
+          <ion-icon src="/assets/add-photo.svg" size="large"></ion-icon>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-list mode="ios" lines="none">
+    <ion-item>
+      <ion-label class="ion-text-center">
+        <h1 class="text-primary weight--900">INFORMACIÓN</h1>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-list
+    mode="ios"
+    lines="none"
+    class="ion-ist-style border-all border-style margin-10 "
+  >
+    <ion-item class="ion-item-style padding-vertical-5">
+      <ion-label *ngIf="user">
+        <b>Nombre</b>: {{user.name}} {{user.lastName}}</ion-label
+      >
+      <ion-label *ngIf="!user">
+        <ion-skeleton-text animated></ion-skeleton-text>
+      </ion-label>
+    </ion-item>
+    <ion-item class="ion-item-style padding-vertical-5">
+      <ion-label> <b>Identificación</b>: 5-123-456 </ion-label>
+    </ion-item>
+  </ion-list>
+  <ion-list
+    mode="ios"
+    lines="none"
+    class="ion-ist-style border-all border-style margin-10 "
+  >
+    <ion-item
+      class="ion-item-style padding-vertical-10"
+      routerLink="change-pass"
+      detail="false"
+    >
+      <ion-label>
+        <b>Cambiar contraseña</b>
+      </ion-label>
+      <ion-icon src="/assets/arrow-circle.svg"></ion-icon>
+    </ion-item>
+  </ion-list>
+</ion-content>
+<app-footer> </app-footer>

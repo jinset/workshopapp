@@ -1,0 +1,49 @@
+<ng-container *ngIf="router.url === '/home'">
+  <ion-grid class="gradient-top-right ">
+    <ion-row>
+      <ion-col size="6" >
+        <div>
+          <ion-select
+            [interfaceOptions]="customActionSheetOptions"
+            interface="action-sheet"
+            value="abitu"
+            (ionChange)="onChange($event)"
+            mode="md"
+          >
+            <ion-select-option value="abitu">Abitu</ion-select-option>
+            <ion-select-option value="abituII">Abitu II</ion-select-option>
+          </ion-select>
+        </div>
+      </ion-col>
+
+      <ion-col offset="4">
+          <ion-buttons class="ion-text-end">
+              <ion-button (click)="goBack()">
+                  <ion-icon src="/assets/logo-noti.svg"></ion-icon>
+      
+              </ion-button>
+            </ion-buttons>
+    
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ng-container>
+
+<ng-container *ngIf="router.url !== '/home'">
+  <ion-header>
+    <ion-toolbar class="gradient-top-right ">
+      <ion-buttons slot="start">
+        <ion-button (click)="goBack()">
+            <ion-icon src="/assets/left-arrow.svg"></ion-icon>
+
+        </ion-button>
+      </ion-buttons>
+      <ion-title class="text-secundary ion-text-uppercase">{{ name }}</ion-title>
+      <ion-buttons slot="end" *ngIf="itSave">
+        <ion-button (click)="save(true)">
+            <ion-icon src="/assets/save.svg"></ion-icon>
+          </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+</ng-container>
